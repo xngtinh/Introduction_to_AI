@@ -10,7 +10,7 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('https://xngtinh.github.io/model/tinh.json');
+  model = await tf.loadModel('https://xngtinh.github.io/model/model.json');
 }
 
 canvas.addEventListener('mousedown', event => {
