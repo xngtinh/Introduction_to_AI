@@ -10,7 +10,7 @@ let model;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('file:///D:/Exercise/AI/digit-recognition/model/model.json');
+  model = await tf.loadModel('https://xngtinh.github.io/model/model.hdf5');
 }
 
 canvas.addEventListener('mousedown', event => {
