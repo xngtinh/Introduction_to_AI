@@ -1,41 +1,51 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	width: 700px;
 	text-align: center;
-	margin: 0px auto;
+	margin: 0px 1%;
 	color: #111111;
+	background-color: #CAFCFC;
+}
+
+.display{
+	display: flex;
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 32px;
 	margin: 20px;
+	text-align: left;
+}
+
+p{
+	text-align: left;
 }
 
 section {
-	display: flex;
-	height: 300px;
+	display: block;
+	width: 200px;
 	align-items: center;
 	justify-content: space-evenly;
-	margin: 20px 0;
+	margin: 2px 0;
 }
 
-#prediction {
-	width: 300px;
-	height: 300px;
+#first-prediction, #operator-prediction, #second-prediction {
+	width: 200px;
+	height: 200px;
 	box-sizing: border-box;
 	border: 1px solid #111;
 	border-radius: 5px;
-	font-size: 228px;
-	line-height: 300px;
+	font-size: 150px;
+	background-color: white;
+	margin-top: 5px;
 }
 
-#main-canvas {
+#first-canvas, #operator-canvas, #second-canvas {
 	border-radius: 5px;
 	cursor: pointer;
 }
 
-#small-canvas {
+#first-small-canvas, #operator-small-canvas, #second-small-canvas {
 	display: none;
 }
 

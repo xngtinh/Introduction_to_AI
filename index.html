@@ -2,24 +2,42 @@
 <html>
 
 <head>
-  <title>Digit Recognition</title>
+  <title>Nhận dạng chữ số và phép tính cơ bản</title>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 </head>
 
 <body>
-  <h1>Digit Recognition</h1>
-  <p>Digit recognition using Convolutional Neural Networks. Built with Keras and TensorFlow.js</p>
+  <h1>Nhận dạng chữ số và phép tính cơ bản</h1>
+  <p>*Áp dụng với phép tính có 1 chữ số</p>
+  <div class='display'>
+    <!-- Nhận dạng số thứ 1 -->
+    <section>
+      <canvas id="first-canvas" width="200" height="200"></canvas>
+      <button id="first-erase">Clear</button>
+      <canvas id="first-small-canvas" width="28" height="28"></canvas>
+      <div id="first-prediction"></div>
+    </section>
+    <!-- Nhận dạng dấu -->
+    <section>
+      <canvas id="operator-canvas" width="200" height="200"></canvas>
+      <button id="operator-erase">Clear</button>
+      <canvas id="operator-small-canvas" width="28" height="28"></canvas>
+      <div id="operator-prediction"></div>
+    </section>
+    <!-- Nhận dạng số thứ 2 -->
+    <section>
+      <canvas id="second-canvas" width="200" height="200"></canvas>
+      <button id="second-erase">Clear</button>
+      <canvas id="second-small-canvas" width="28" height="28"></canvas>
+      <div id="second-prediction"></div>
+    </section>
+  </div>
   
-  <section>
-    <canvas id="main-canvas" width="300" height="300"></canvas>
-    <canvas id="small-canvas" width="28" height="28"></canvas>
-    <div id="prediction"></div>
-  </section>
 
-  <button id="erase">Clear</button>
-  <script src="script.js"></script>
+  
+  <script src="a.js"></script>
 </body>
 
 </html>
