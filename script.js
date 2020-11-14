@@ -1,6 +1,6 @@
 /*----------------------------------------Nhận dạng dấu----------------------------------------*/
 function addition(){
-  if (number1 == null || number2 == null){
+  if (number1 === '' || number2 === ''){
     alert('Bạn chưa nhập đủ số!!')
   }
   else{
@@ -10,7 +10,7 @@ function addition(){
 }
 
 function subtraction(){
-  if (number1 == null || number2 == null){
+  if (number1 === '' || number2 === ''){
     alert('Bạn chưa nhập đủ số!!')
   }
   else{
@@ -19,16 +19,16 @@ function subtraction(){
   }
 }
 function multiplication(){
-  if (number1 == null || number2 == null){
+  if (number1 === '' || number2 === ''){
     alert('Bạn chưa nhập đủ số!!')
   }
   else{
-    document.getElementById('operator').innerText = 'x';
+    document.getElementById('operator').innerText = '*';
     document.getElementById('result').innerText = number1 * number2;
   }
 }
 function division(){
-  if (number1 == null || number2 == null){
+  if (number1 === '' || number2 === ''){
     alert('Bạn chưa nhập đủ số!!')
   }
   else{
@@ -36,8 +36,8 @@ function division(){
       alert('Số chia phải khác 0');
     }
     else{
-      document.getElementById('operator').innerText = ':';
-      document.getElementById('result').innerText = number1 / number2;
+      document.getElementById('operator').innerText = '/';
+      document.getElementById('result').innerText = Math.round( number1 / number2 * 100 + Number.EPSILON ) / 100;
     }
   }
 }
@@ -128,6 +128,7 @@ function erase() {
   inputBox.fillRect(0, 0, canvas.width, canvas.height);
   displayBox.innerText = '';
   number1 = '';
+  document.getElementById('result').innerText = '';
 }
 
 erase();
@@ -224,6 +225,7 @@ function erase_second() {
   inputBox_second.fillRect(0, 0, canvas_second.width, canvas_second.height);
   displayBox_second.innerText = '';
   number2 = '';
+  document.getElementById('result').innerText = '';
 }
 
 erase_second();
