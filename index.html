@@ -17,24 +17,42 @@
       <canvas id="first-canvas" width="200" height="200"></canvas>
       <button id="first-erase">Clear</button>
       <canvas id="first-small-canvas" width="28" height="28"></canvas>
-      <div id="first-prediction"></div>
     </section>
     <!-- Nhận dạng dấu -->
     <section>
-      <canvas id="operator-canvas" width="200" height="200"></canvas>
-      <button id="operator-erase">Clear</button>
-      <canvas id="operator-small-canvas" width="28" height="28"></canvas>
-      <div id="operator-prediction"></div>
+      <button id="addition" onclick="addition()">+</button>
+      <button id="subtraction" onclick="subtraction()">-</button>
+      <button id="multiplication" onclick="multiplication()">*</button>
+      <button id="division" onclick="division()">/</button>
     </section>
     <!-- Nhận dạng số thứ 2 -->
     <section>
       <canvas id="second-canvas" width="200" height="200"></canvas>
       <button id="second-erase">Clear</button>
       <canvas id="second-small-canvas" width="28" height="28"></canvas>
-      <div id="second-prediction"></div>
     </section>
   </div>
-  
+  <div class='display'>
+    <!-- Nhận dạng số thứ 1 -->
+    <section>
+      <div id="first-prediction"></div>
+    </section>
+    <!-- Nhận dạng dấu -->
+    <section>
+      <div id="operator" style="font-size: 150px;"></div>
+    </section>
+    <!-- Nhận dạng số thứ 2 -->
+    <section>
+      <div id="second-prediction"></div>
+    </section>
+    <!-- Kết quả -->
+    <section>
+      <div style="font-size: 150px;">=</div>
+    </section>
+    <section>
+      <div id="result"></div>
+    </section>
+  </div>
 
   
   <script src="script.js"></script>

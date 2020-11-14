@@ -26,10 +26,11 @@ section {
 	width: 200px;
 	align-items: center;
 	justify-content: space-evenly;
-	margin: 2px 0;
+	margin: 2px 10px;
+
 }
 
-#first-prediction, #operator-prediction, #second-prediction {
+#first-prediction, #second-prediction, #result {
 	width: 200px;
 	height: 200px;
 	box-sizing: border-box;
@@ -45,7 +46,7 @@ section {
 	cursor: pointer;
 }
 
-#first-small-canvas, #operator-small-canvas, #second-small-canvas {
+#first-small-canvas, #second-small-canvas {
 	display: none;
 }
 

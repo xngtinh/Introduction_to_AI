@@ -1,12 +1,58 @@
+/*----------------------------------------Nhận dạng dấu----------------------------------------*/
+function addition(){
+  if (number1 == null || number2 == null){
+    alert('Bạn chưa nhập đủ số!!')
+  }
+  else{
+    document.getElementById('operator').innerText = '+';
+    document.getElementById('result').innerText = number1 + number2;
+  }
+}
+
+function subtraction(){
+  if (number1 == null || number2 == null){
+    alert('Bạn chưa nhập đủ số!!')
+  }
+  else{
+    document.getElementById('operator').innerText = '-';
+    document.getElementById('result').innerText = number1 - number2;
+  }
+}
+function multiplication(){
+  if (number1 == null || number2 == null){
+    alert('Bạn chưa nhập đủ số!!')
+  }
+  else{
+    document.getElementById('operator').innerText = 'x';
+    document.getElementById('result').innerText = number1 * number2;
+  }
+}
+function division(){
+  if (number1 == null || number2 == null){
+    alert('Bạn chưa nhập đủ số!!')
+  }
+  else{
+    if (number2 == 0){
+      alert('Số chia phải khác 0');
+    }
+    else{
+      document.getElementById('operator').innerText = ':';
+      document.getElementById('result').innerText = number1 / number2;
+    }
+  }
+}
+
+
+/*----------------------------------------Số thứ 1----------------------------------------*/
 const canvas = document.getElementById('first-canvas');
 const smallCanvas = document.getElementById('first-small-canvas');
 const displayBox = document.getElementById('first-prediction');
-
 const inputBox = canvas.getContext('2d');
 const smBox = smallCanvas.getContext('2d');
 
 let isDrawing = false;
 let model;
+var number1, number2;
 
 /* Loads trained model */
 async function init() {
@@ -71,6 +117,7 @@ function updateDisplay(predictions) {
   // Find index of best prediction, which corresponds to the predicted value
   const bestPred = predictions.indexOf(Math.max(...predictions));
   displayBox.innerText = bestPred;
+  number1 = bestPred;
 }
 
 document.getElementById('first-erase').addEventListener('click', erase);
@@ -80,12 +127,13 @@ function erase() {
   inputBox.fillStyle = 'black';
   inputBox.fillRect(0, 0, canvas.width, canvas.height);
   displayBox.innerText = '';
+  number1 = '';
 }
 
 erase();
 init();
 
-// Số thứ 2
+/*----------------------------------------Số thứ 2----------------------------------------*/
 const canvas_second = document.getElementById('second-canvas');
 const smallCanvas_second = document.getElementById('second-small-canvas');
 const displayBox_second = document.getElementById('second-prediction');
@@ -159,6 +207,7 @@ function updateDisplay_second(predictions) {
   // Find index of best prediction, which corresponds to the predicted value
   const bestPred = predictions.indexOf(Math.max(...predictions));
   displayBox_second.innerText = bestPred;
+  number2 = bestPred;
 }
 
 function number(predictions) {
@@ -174,6 +223,7 @@ function erase_second() {
   inputBox_second.fillStyle = 'black';
   inputBox_second.fillRect(0, 0, canvas_second.width, canvas_second.height);
   displayBox_second.innerText = '';
+  number2 = '';
 }
 
 erase_second();
