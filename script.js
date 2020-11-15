@@ -1,7 +1,7 @@
 /*----------------------------------------Nhận dạng dấu----------------------------------------*/
 function addition(){
   if (number1 === '' || number2 === ''){
-    swal("Bạn chưa nhập đủ số!!", "", "error");
+    swal("Bạn chưa nhập đủ số!!", "", "warning");
   }
   else{
     document.getElementById('operator').innerText = '+';
@@ -11,7 +11,7 @@ function addition(){
 
 function subtraction(){
   if (number1 === '' || number2 === ''){
-    swal("Bạn chưa nhập đủ số!!", "", "error");
+    swal("Bạn chưa nhập đủ số!!", "", "warning");
   }
   else{
     document.getElementById('operator').innerText = '-';
@@ -20,7 +20,7 @@ function subtraction(){
 }
 function multiplication(){
   if (number1 === '' || number2 === ''){
-    swal("Bạn chưa nhập đủ số!!", "", "error");
+    swal("Bạn chưa nhập đủ số!!", "", "warning");
   }
   else{
     document.getElementById('operator').innerText = '*';
@@ -29,7 +29,7 @@ function multiplication(){
 }
 function division(){
   if (number1 === '' || number2 === ''){
-    swal("Bạn chưa nhập đủ số!!", "", "error");
+    swal("Bạn chưa nhập đủ số!!", "", "warning");
   }
   else{
     if (number2 == 0){
@@ -231,6 +231,10 @@ function erase_second() {
 erase_second();
 init_second();
 
-
+function all_erase() {
+  erase();
+  erase_second();
+  document.getElementById('operator').innerText = '';
+}
 
 
