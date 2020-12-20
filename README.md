@@ -12,4 +12,4 @@ Nhóm sinh viên thực hiện:
 ### Demo
 
 1. [Website](https://xngtinh.github.io/)
-2. [Video](https://drive.google.com/file/d/15oAkFa2sfm_3PwkYFOfKsg9tjUfpGBC6/view?usp=sharing)
+2. [Video](https://www.youtube.com/watch?v=WjajukC9fqc)
