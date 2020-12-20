@@ -1,0 +1,7 @@
+6
+r1:a^b=>c
+r2:h^h=>d
+r3:b^c=>e
+r4:a^d=>m
+r5:a^b=>o
+r6:o^e=>m
