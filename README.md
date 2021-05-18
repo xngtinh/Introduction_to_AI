@@ -11,5 +11,5 @@ Nhóm sinh viên thực hiện:
 
 ### Demo
 
-1. [Website](https://xngtinh.github.io/)
+1. [Website](https://xngtinh.github.io/Introduction_to_AI/)
 2. [Video](https://www.youtube.com/watch?v=WjajukC9fqc)
