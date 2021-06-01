@@ -56,7 +56,7 @@ var number1, number2;
 
 /* Loads trained model */
 async function init() {
-  model = await tf.loadModel('https://xngtinh.github.io/model/model.json');
+  model = await tf.loadModel('https://xngtinh.github.io/Introduction_to_AI/model/model.json');
 }
 
 canvas.addEventListener('mousedown', event => {
@@ -147,7 +147,7 @@ let model_second;
 
 /* Loads trained model */
 async function init_second() {
-  model_second = await tf.loadModel('https://xngtinh.github.io/model/model.json');
+  model_second = await tf.loadModel('https://xngtinh.github.io/Introduction_to_AI/model/model.json');
 }
 
 canvas_second.addEventListener('mousedown', event => {
