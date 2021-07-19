@@ -1,7 +1,7 @@
 ## Tìm hiểu TensorFlow và ứng dụng trong bài toán nhận dạng số
 
 ```markdown
-Giảng viên hướng dẫn: TS Nguyễn Đình Hiển
+Giảng viên hướng dẫn: TS. Nguyễn Đình Hiển
 Nhóm sinh viên thực hiện:
         - Cao Tấn Huy       43.01.103.020
         - Lâm Phát Tài      44.01.104.188
